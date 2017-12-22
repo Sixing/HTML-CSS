@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: arial;
+    color: #6C6C6C;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    color: #6C6C6C;
+    background-color: #f4f4f4;
+}
+
+header {
+    margin: 0 auto;
+    width: 100%;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #eee;
+}
+
+nav {
+    margin: 0 auto;
+    width: 1190px;
+    height: 35px;
+    background: #f5f5f5;
+}
+
+ul {
+    display: block;
+}
+
+footer {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nav-left li,
+.nav-right li {
+    margin-right: 20px;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    cursor: pointer
+}
+
+.nav-left li {
+    float: left;
+}
+
+.nav-right li {
+    float: right;
+}
+
+.red {
+    color: #ff5000;
+}
+
+.searchBarWrapper {
+    background-color: #fff;
+    padding-top: 24px;
+    height: 97px;
+}
+
+.searchBar {
+    width: 1190px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo {
+    width: 190px;
+    height: 80px;
+    float: left;
+    margin-top: 8px;
+}
+
+.logo-pic {
+    background-image: url(./img/logo.png);
+    display: block;
+    margin-left: 22px;
+    padding-top: 58px;
+    width: 142px;
+    height: 0;
+    overflow: hidden;
+}
+.search,.searchInput,.searchOptions{
+	margin-left:258px;
+	margin-right:302px;
+}
+.search>div{
+	margin-left:17px;
+}
+.search>div>ul>li[selected],
+.search>div>ul>li {
+    float: left;
+    width: 36px;
+    height: 22px;
+    text-align: center;
+    line-height: 22px;
+    margin-right: 4px;
+    cursor: pointer;
+    color: #f40;
+}
+
+.search>div>ul>li[selected] {
+    background-image: linear-gradient(to right, #ff9000 0, #ff5000 100%);
+    color: #fff;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+.search>div>ul>li:hover {
+    background-color: #ffeee5;
+}
+
+.searchInput{
+	width:630px;
+	height:40px;
+	position:relative;
+	top:22px;
+}
+
+.searchInputWrap{
+	width:630px;
+	height:40px;
+	border-radius:20px;
+	border:2px solid #ff5000;
+}
+.searchInputWrap>input[type="text"]{
+	position:absolute;
+	top:2px;
+	left:30px;
+    height:40px;
+    width:472px;
+	border:none;
+	outline: none;
+}
+.searchInputWrap>input[type="submit"]{
+	position: absolute;
+	right:-2px;
+	font-size:18px;
+	font-weight:700;
+	color:#fff;
+	background: #ff4200;
+	cursor:pointer;
+	height:100%;
+	border:none;
+	width:74px;
+	border-top-right-radius:15px;
+	border-bottom-right-radius:15px;
+	outline: none;
+}
+.searchOptions>ul>li>a{
+    float: left;
+    margin-top:32px;
+    margin-right:10px;
+}
+
+.searchOptions>ul>li>a:hover,.searchOptions>.more>li>a:hover,.searchOptions>.more>li>a>span:hover{
+    cursor:pointer;
+    color: #ff5000;
+}
+.searchOptions>.more>li>a,.searchOptions>.more>li>a>span{
+    float:right;
+    margin-left:10px;
+}
+
+.navWrapper{
+	margin:0 auto;
+	height:30px;
+	background-color: #ff9000;
+}
+
+.navContent{
+	margin:0 auto;
+	width:1190px;
+	height:30px;
+	line-height:30px;
+	position:relative;
+}
+
+.navContent > h2{
+	float:left;
+	background-color:#ff5000;
+	text-align:center;
+	font-size:16px;
+	color:#fff;
+	width:190px;
+}
+
+.navContent>ul>li{
+	float:left;
+	font-weight:700;
+	margin:0 3px;
+	text-align:center;
+	padding:0 4px;
+	cursor:pointer;
+}
+
+.navContent>ul>li>a{
+	color:#fff;
+	font-size:16px;
+}
+
+.separator{
+	color:#fff;
+	cursor:none;
+}
+.container{
+	width:1190px;
+	margin:0 auto;
+	height:632px;
+}
+/*.container:before{
+	content:"";
+	display:table;
+}*/
+
+.main{
+	float: left;
+	width:900px;
+	height:100%;
+	clear: left;
+}
+
+.service{
+	background-color:#fff;
+	width:190px;
+	position:relative;
+	height:522px;
+	font-size:14px;
+	float:left;
+}
+
+.serviceContent{
+	border:1px solid #ff5000;
+	border-top:none;
+	padding-top:5px;
+	padding-bottom: 3px;
+	width:190px;
+}
+
+.serviceContent li{
+	overflow:hidden;
+	line-height:32px;
+	height:32px;
+	padding-left:25px;
+	padding-right:19px;
+	position:relative;
+	font-size:14px;
+	font-weight: 400;
+	width:145px;
+	color:#666;
+}
+.serviceContent li a{
+	color:#666;
+	font-size:14px;
+	font-weight: 400;
+	line-height:32px;
+}
+
+.serviceContent li:hover,.serviceContent li a:hover{
+	background-color: #ffe4dc;
+	color:#ff5000;
+}
+
+.serviceContent li a:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.service li i{
+	position:absolute;
+	right:10px;
+	top:9px;
+	font-size: 12px;
+}
+
+.container .core {
+	margin-left:10px;
+	margin-top: 10px;
+	height:512px;
+	width:520px;
+	float:left;
+}
+
+.core .first{
+	position: relative;
+	width:520px;
+	height:280px;
+	overflow: hidden;
+}
+
+.core .second{
+	position: relative;
+	width:520px;
+	height:230px;
+	overflow: hidden;
+	margin-top: 1px;
+}
+
+.sub-column{
+	float: left;
+	width:160px;
+	height: 512px;
+	margin-left:10px;
+	margin-top: 10px;
+}
+
+.sub-column .third{
+	width:160px;
+	height:280px;
+}
+
+.right{
+	float:right;
+	width:290px;
+	height:100%;
+	margin-top:10px;
+}
+
+.right .memeberBg{
+	height: 145px;
+	width:290px;
+	padding-left:5px;
+	background-color: #FFF;
+}
+
+.right .memeberBg .member{
+	padding:3px 0 10px 0;
+	height:132px;
+	padding-right:inherit;
+	text-align:center;
+}
+
+.right .memeberBg .member .memberbd{
+	position:relative;
+	height:91px;
+}
+
+.right .memeberBg .member .memberbd .avater-wrapper{
+	display: block;
+	margin:0 auto;
+	width:74px;
+	height:56px;
+}
+
+.right .memeberBg .member .memberbd .avater-wrapper .member-home{
+	display: inline-block;
+	border:3px solid #fff;
+	border-radius:50%;
+	background-clip: padding-box;
+	width:50px;
+	height:50px;
+	line-height:50px;
+	overflow: hidden;
+}
+
+
+.member-nick-info{
+	display:block;
+	line-height:17px;
+	height:17px;
+}
+
+.member-tjb{
+	line-height:17px;
+	height:17px;
+}
+
+.member-tjb .memberpunch{
+	display: inline-block;
+	border-radius: 9px;
+	background-clip: padding-box;
+	background:#ffe4db;
+	padding:0 10px 0 20px;
+	position:relative;
+	border:none;
+	color:#ff5000;
+}
+
+.member-tjb .memberpunch .tbh-icon{
+	position:absolute;
+	top:0;
+	display: block;
+	left:0;
+	height:16px;
+	width:16px;
+	vertical-align: middle;
+}
+
+.member-ft{
+	height:40px;
+	overflow: hidden;
+	margin-top:2px;
+	padding-left: 15px;
+}
+
+.member-ft .member-logout{
+	height:25px;
+	margin-top:8px;
+}
+
+.member-ft .member-logout a{
+	float:left;
+	line-height: 25px;
+	width:75px;
+	margin-right:7px;
+	text-align:center;
+	color:#fff;
+	background-image:linear-gradient(to right,#ff5000 0,#ff6f06 100%);
+	background-repeat: repeat-x;
+	border-radius: 4px;
+	background-clip: padding-box;
+	font-size:14px;
+	font-weight: 700;
+}
+
+.member-ft .member-logout .login{
+	width:92px;
+}
+
+.message{
+	position:relative;
+	padding-left:82px;
+	color:#f40;
+	display: block;
+	height:26px;
+	line-height: 26px;
+	background:#ffe4dd;
+	font-size:12px;
+}
+
+ .message a{
+	color:#f40;
+ }
+
+.message a span{
+ 		color:#f40;
+ 		position:absolute;
+ 		right:52px;
+ 		top:11px;
+ 		line-height:0;
+ 		width:0;
+ 		height:50;
+ 		margin-left:32px;
+ 		border-width:5px 0 5px 7px;
+
+ }
+
+ .notice{
+ 	height:98px;
+ 	padding-top:10px;
+ 	width:290px;
+ 	background-color: #fff;
+ }
+
+ .notice ul{
+ 	position:relative;
+ 	height:24px;
+ 	margin-top:4px;
+ 	overflow:hidden;
+ 	margin-right:-2px;
+ 	padding:0 8px;
+ }
+
+.notice ul .selected{
+	padding:0;
+	font-weight: 700;
+	border-bottom: 2px solid #f40;
+}
+
+ .notice >ul li{
+ 	float:left;
+ 	line-height:20px;
+ 	width:32px;
+ 	text-align:center;
+	margin:0 11px;
+	cursor:pointer;
+ }
+
+ .notice ul li:hover{
+ 	color:#ff5000;
+ }
+
+ .notice .notice-bd ul{
+ 	float:left;
+ 	height:50px;
+ 	overflow:hidden;
+ 	padding:9px;
+ 	padding-bottom:6px;
+ }
+
+  .notice .notice-bd ul li{
+  	float:left;
+  	line-height: 25px;
+  	height:25px;
+	width:130px;
+	overflow:hidden;
+  }
+
+	.headline-wrapper{
+		width:890px;
+		height:100px;
+		display: inline-block;
+		background:#fff;
+		margin-top: 10px;
+
+	}
+
+	.right-service{
+		width:290px;
+		height:343px;
+		background-color: #fff;
+		overflow: hidden;
+	}
+
+  .headline{
+	position:relative;
+	padding: 14px 14px 12px 20px;
+
+  }
+
+  .headline img{
+  	width:890px;
+	height:100px;
+	position:absolute;
+	top:0;
+	left:0;
+  }
